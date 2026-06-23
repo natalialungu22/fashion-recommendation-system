@@ -80,7 +80,7 @@ The live application was therefore deployed using Hugging Face Spaces, which is 
 
 The full local version uses a cleaned dataset of 31,378 fashion images.
 
-Due to Hugging Face storage limitations, the deployed application uses a demo subset of 50 images. While this reduces the variety and quality of recommendations compared to the full dataset, the deployment demonstrates the complete recommendation pipeline, including image preprocessing, ResNet50 feature extraction, embedding generation, and cosine similarity-based retrieval.
+Due to Hugging Face storage limitations, the deployed application uses a demo subset of 200 images. While this reduces the variety and quality of recommendations compared to the full dataset, the deployment demonstrates the complete recommendation pipeline, including image preprocessing, ResNet50 feature extraction, embedding generation, and cosine similarity-based retrieval.
 
 
 
