@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Recommendation System</title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='style.css') }}"
+    >
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Fashion Recommendation System</h1>
+    <p>Upload an image of a clothing item to find visually similar products.</p>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input
+            type="file"
+            name="image"
+            accept="image/*"
+            required
+        >
+        <br><br>
+        <button class="recommend-btn">
+            Recommend
+        </button>
+    </form>
+
+    {% if uploaded_image %}
+        <h2>Uploaded Image</h2>
+        <img
+            class="input-image"
+            src="{{ url_for('static', filename=uploaded_image) }}"
+        >
+        <h2>Top Recommendations</h2>
+        <div class="recommendations">
+            {% for item in recommendations %}
+                <div class="card">
+                    <img
+                        src="/dataset_image/{{ item.image_name }}"
+                    >
+                    <div class="score">
+                        Similarity:
+                        {{ "%.2f"|format(item.score * 100) }}%
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>
+</body>
+</html>

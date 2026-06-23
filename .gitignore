@@ -1,0 +1,17 @@
+venv/
+__pycache__/
+
+app/static/uploads/*
+
+data/raw/
+data/cleaned/images/
+
+*.pyc
+.DS_Store
+
+embeddings/fashion_embeddings.pt
+embeddings/fashion_image_names.csv
+outputs/
+data/demo/images/
+embeddings/demo_embeddings.pt
+app/assets/app_screenshot.png

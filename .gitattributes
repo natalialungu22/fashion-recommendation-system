@@ -1,0 +1,2 @@
+data/demo/images/*.jpg filter=lfs diff=lfs merge=lfs -text
+embeddings/demo_embeddings.pt filter=lfs diff=lfs merge=lfs -text

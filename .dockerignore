@@ -1,0 +1,13 @@
+venv/
+__pycache__/
+.git/
+
+app/static/uploads/
+
+data/raw/
+data/cleaned/
+
+outputs/
+
+*.pyc
+.DS_Store
