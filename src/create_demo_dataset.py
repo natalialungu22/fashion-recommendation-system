@@ -9,7 +9,7 @@ demo_images_path = Path("data/demo/images")
 demo_images_path.mkdir(parents=True, exist_ok=True)
 
 # Number of images to use for deployment demo
-DEMO_SIZE = 500
+DEMO_SIZE = 200
 
 image_files = list(cleaned_images_path.glob("*.jpg"))[:DEMO_SIZE]
 
